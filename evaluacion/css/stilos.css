@@ -1,0 +1,74 @@
+body{
+  background-color: #999999;
+}
+footer{
+  margin-top: 20px;
+}
+img{
+  border-radius: 10px;
+}
+table, th, td {
+border: 1px solid black;
+
+}
+
+#contenedor{
+  font-family: cursive;
+  font-size: 16px;
+}
+#encabezado{
+  display: block;
+  margin: 10px auto;
+}
+a[href$='html']{
+  color: red;
+}
+svg[href$='.svg']{
+  border-radius: 50px;
+}
+img[src$='jpeg'],img[src$='png']{
+  border: 1px solid black;
+}
+*{
+  margin:1vh 1vw;
+}
+h1 + h2{
+  text-decoration: underline;
+}
+h2 ~ p{
+  text-align: justify;
+}
+body> h2{
+text-decoration: underline;
+  }
+ul li{
+  list-style-type: circle;
+}
+a[href^='http://']:visited{
+  color:blue;
+}
+a:hover{
+  color:green;
+}
+h2:first-child{
+  text-decoration: overline;
+  color:#fff;
+}
+input:focus{
+  width: 160px;
+  height:140px;
+}
+p::first-letter{
+  text-transform: capitalize;
+}
+p::first-line{
+  font-size: 32px;
+}
+p::selection{
+
+}
+/*los pseudo elementos son parte de la estructura html pero se encuentran ocultos
+::before ::after
+pseudo clases
+:first-child
+:last-child*/

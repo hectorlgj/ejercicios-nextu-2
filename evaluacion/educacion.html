@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable:no">
+    <title>Hoja de Vida</title>
+    <link rel="stylesheet" href="css/stilos.css">
+  </head>
+  <body>
+    <svg width="250px" height="100px">
+      <image width="250px" height="100px" xlink:href="img/logo.svg"></image>
+    </svg>
+    <h1>Hoja de Vida</h1>
+      <h2>Héctor Leopoldo García Jiménez</h2>
+      <h3>24/08/1978 <br/>México D.F </h3>
+    <div class="nav">
+      <ul>
+      <li><a href="index.html"> Inicio</a></li>
+      <li class="active"><a href="educacion.html">Educación</a></li>
+      <li><a href="experiencia.html">Experiencia</a></li>
+      <ul>
+    </div>
+
+      <h2>Educación</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Año</th>
+            <th>Institución</th>
+            <th>Lugar</th>
+            <th>¿Culminó?</th>
+          </tr>
+        </thead>
+        <tbody >
+          <tr>
+            <td>2013</td>
+            <td>CUC</td>
+            <td>México</td>
+            <td>si</td>
+          </tr>
+            <tr>
+              <td>2017</td>
+              <td>Next_U</td>
+              <td>México</td>
+              <td>En curso</td>
+            </tr>
+        </tbody>
+      </table>
+      <h2>Agregar Estudios</h2>
+      <form class="" action="index.html" method="post">
+        <p>
+    			<label for="recommend">Año: </label>
+            <select name="recommend">
+      				<option value="1">2016</option>
+      				<option value="1">2015</option>
+      				<option value="1">2014</option>
+              <option value="1">2013</option>
+      				<option value="1">2012</option>
+      				<option value="1">2011</option>
+      			</select>
+    		</p>
+        <p>
+    			<label for="text" >Institucion: </label>
+          <input type="text" name="institucion" placeholder="">
+    		</p>
+        <p>
+    			<label for="place">Lugar: </label>
+    			<textarea name="place" id="" cols="30" rows="3"></textarea>
+    		</p>
+        <p>
+    			<label for="genre">Culminó </label>
+          <input type="radio" name="genre"> Si
+          <input type="radio" name="genre"> No
+    		</p>
+
+        <p>
+    			<input type="submit" value="Enviar">
+    		</p>
+      </form>
+      <hr>
+      <footer>
+        <h3>Contacto:</h3>
+       <p>tel:5536139536<br/>
+       email:<a href="">hectorlgj@gmail.com</a><br/>
+       Norte 85 #411<br/>
+       Col.Electricistas<br/>
+       C.P. 02050 México D.F
+     </p>
+      </footer>
+  </body>
+</html>

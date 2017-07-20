@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable:no">
+    <title>etiquetas svg e image</title>
+  </head>
+  <body>
+<!--svg>
+  <image xlink:href="img/nextu_logo.svg" width="300px" height="200px" x="40px" y="40px"></image>
+</svg-->
+<!--svg width="1200px" height="400px" viewBox="0 0 1200 400">
+  <image width="800px" height="800px" xlink:href="img/549px-Orange_sport_car.svg"></image>
+</svg-->
+<h2>Leccion 2 - Etiqueta SVG y sus Atributos</h2>
+
+<svg height="400" width="400">
+  <circle cx="150" cy="150" r="100" fill="#ededed" stroke="#000" stroke-width="2"/>
+</svg>
+
+<!--cx y cy es la posición qen la que se va a ubicar, r es un atributo propio de los circulos es el radio, fill es un atributo de svg y es el color del relleno, stroke es el color del borde, stroke-width es el grosor del borede-->
+<svg height="250" width="500">
+  <polygon points="220,10 300,210 170,250 123,234" fill="#999999" stroke="#000" stroke-width="1"/>
+</svg>
+
+<svg height="200" width="200">
+  <rect width="300" height="150" fill="red" stroke="#000" stroke-width="2"/>
+</svg>
+
+<svg height="200" width="500">
+  <polyline points="20,20 40,25 60,40 80,120 120,140 200,180" fill="none" stroke="black" stroke-width="2"/>
+</svg>
+
+<svg height="400" width="400">
+  <ellipse cx="200" cy="80" rx="100" ry="50" fill="yellow" stroke="#000" stroke-width="2"/>
+</svg>
+
+<svg height="200" width="200">
+  <line x1="0" y1="0" x2="100" y2="100"  stroke="#000" stroke-width="2"/>
+</svg>
+<header>
+  <h2>Primer SVG. Ejercio</h2>
+</header>
+<svg width="100" height="100" >
+  <circle cx="50" cy="50" r="40" fill="#00bff0" stroke="#000" stroke-width="1"/>
+</svg>
+<header>
+  <h2>Leccion 2 - Etiqueta SVG y sus Atributos</h2>
+</header>
+
+<svg width="990px" height="990px" viewBox="0 0 990 990">
+  <g id="agrupacion1" fill="red" stroke="black" stroke-width="2">
+   <rect x="150" y="100" width="30px" height="30px"/>
+    <rect x="350" y="150" width="150px" height="150px"/>
+  </g>
+  <br>
+</svg>
+
+<svg width="990px" height="990px" viewBox="0 0 990 990">
+  <defs>
+    <linearGradient id="gradiente1">
+        <stop offset="20%" stop-color="#39F"/>
+        <stop offset="90%" stop-color="#F3F"/>
+      </linearGradient>
+  </defs>
+
+    <rect x="150" y="150" width="150px" height="550px" fill="url(#gradiente1)"/>
+</svg>
+<svg width="990px" height="990px" viewBox="0 0 990 990">
+  <title>titulo</title>
+  <desc>
+    este sirve para asignar una descripcion
+  </desc>
+  <g>
+    <linearGradient id="gradiente1">
+        <stop offset="20%" stop-color="#39F"/>
+        <stop offset="90%" stop-color="#F3F"/>
+      </linearGradient>
+  </g>
+    <rect x="150" y="150" width="150px" height="550px" fill="url(#gradiente1)"/>
+</svg>
+
+<svg width="1200px" height="1200px" viewBox="0 0 1200 1200">
+  <defs>
+    <rect id="recta" width="150px" height="550px" fill="red" stroke="black" stroke-width="3"/>
+  </defs>
+ <use x="200" y="200" xlink:href="#recta"/>
+ <use x="300" y="300" xlink:href="#recta"/>
+ <use x="400" y="400" xlink:href="#recta"/>
+</svg>
+<svg width="1200px" height="1200px" viewBox="0 0 1200 1200">
+  <!--path d="M 100 100 L 300 100 L 200 200 z" fill="red" stroke="black" stroke-width="2">
+  </path-->
+  <path d="M500,500 C100,100 400,100 400,250 z" fill="red" stroke="black" stroke-width="2">
+  </path>
+</svg>
+<!--M=moveto
+  L=lineto
+  H=horizontal lineto
+  V=vertival lineto
+  C=curveto
+  S=smooth
+  Q=quadratic Beizer curve
+  T=smooth quadratic Beizer Curveto
+  A=elliptical Arc
+  Z=closepath -->
+  </body>
+</html>
