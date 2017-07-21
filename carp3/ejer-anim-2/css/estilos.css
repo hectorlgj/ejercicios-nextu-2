@@ -1,0 +1,101 @@
+body {
+	margin: 20px;
+	background-color: black;
+	color: white;
+	font-family: Raleway;
+}
+
+header h1{
+	text-align: center;
+}
+
+#contenido {
+	display: flex;
+	flex-direction: column;
+}
+
+#contenido > h1 {
+	padding: 10px;
+	text-align: center;
+}
+
+footer {
+	margin-top: 10px;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.contenedor {
+	display: flex;
+	flex-direction: row;
+}
+
+img{
+	border: 2px solid white;
+	width: 250px;
+}
+
+.contenedor > div {
+	text-align: center;
+	padding: 10px;
+	margin: 10px;
+	width: 50%;
+}
+#imagen1 img{
+	border: 4px solid white;
+	animation-name: img1-animacion;
+	animation-duration: 2s;
+}
+@-webkit-keyframes img1-animacion{
+	from{
+		border: 1px solid black;
+	}
+	to{
+		border: 4px solid white;
+	}
+}
+#imagen2 img{
+	animation-name: img2-animacion;
+	animation-duration: 2s;
+	-webkit-animation-delay:1s;
+	-moz-animation-delay:1s;
+	animation-delay: 1s;
+}
+@-webkit-keyframes img2-animacion{
+	0%{
+		position: relative;
+		left: 0;
+	}
+	50%{
+		position: relative;
+		left: 500px;
+	}
+	100%{
+		position: relative;
+		left: 0;
+	}
+}
+#imagen3{
+	background: black;
+	transition-property: background;
+	transition-duration: 1s;
+	transition-timing-function: linear;
+}
+#imagen3:hover{
+	background: white;
+}
+
+/*filtros de imagenes*/
+
+/*#imagen4 img{
+	width: 50%;
+	transition: background 1s;
+	animation: img4-animacion 5s;
+}
+@-webkit-keyframes img4-animacion{
+	from{
+		transform:  rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+}*/
