@@ -1,0 +1,241 @@
+body{
+background-color: #02010a;
+font-family: 'Dancing Script', cursive;
+}
+
+ .contenido header{
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+
+}
+.contenido{
+  display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+  animation-name: slidein;
+  animation-duration: 2s;
+  -webkit-animation-delay:1s;
+  -moz-animation-delay:1s;
+  animation-delay: 1s;
+
+}
+@-webkit-keyframes slidein{
+  0%{
+    position: relative;
+    margin-top: 150%;
+  }
+  50%{
+    position: relative;
+    margin-top: -5%;
+
+  }
+  100%{
+    position: relative;
+    margin-top: 0%;
+  }
+}
+header{
+  min-height: 90px;
+  flex:1 2 50%;
+}
+.title h1{
+  color: #fff;
+  text-shadow: 2px 2px #02010a;
+  margin:5px;
+  float: left;
+}
+ header nav{
+text-align: end;
+}
+ul{
+  display: -webkit-inline-box;
+  list-style: none;
+  padding: 0px;
+}
+li a{
+  padding-left: 15px;
+  color: #fff;
+}
+.active a{
+  text-decoration: none;
+}
+
+.contenido1{
+  background-color: #82c3a6;
+  padding: 20px;
+}
+.img-responsive{
+  max-width: 100%;
+}
+.contenido2{
+  background-color: #d5c75f;
+  border: 1px solid;
+  padding: 20px;
+}
+.contenido2A{
+  background-color: #d5c75f;
+  border: 1px solid;
+  padding: 20px;
+}
+
+.contacto{
+  background-color: #C6d5c5;
+  width:100%;
+
+}
+.contact{
+  max-width: 225px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  order: 1;
+}
+.terms{
+  max-width: 225px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  order: 2;
+}
+.redes{
+  max-width: 225px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  order: 3;
+}
+.derechos{
+  max-width: 225px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  order: 4;
+}
+.imgp-1, .imgr-1{
+  filter: blur(10px);
+	-webkit-filter: blur(10px);
+
+}
+.imgp-2, .imgp-4, .imgp-6, .imgr-2, .imgr-4, .imgr-6{
+  filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+.imgp-3, .imgr-3{
+  filter:sepia(90%);
+	-webkit-filter:sepia(90%);
+}
+@media (min-width: 900px) {
+  .contenido{
+    max-width: 90%;
+    margin: 0px auto;
+    width: 900px;
+  }
+  section[class="contacto"]{
+    min-height: 150px;
+    display: flex;
+    width: 100%;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .contenido2{
+    display: flex;
+      flex: 1 2 50%;
+    }
+    .contenido2a{
+      display: flex;
+        flex: 1 2 50%;
+      }
+    .contenido2b{
+      display: flex;
+        flex: 1 2 50%;
+      }
+  .img-izq{
+    padding-right: 10px;
+    order: 1;
+    width:50%;
+
+  }
+  .img-izq:hover{
+    transform: rotate(10deg);
+    transition: 2s;
+    box-shadow: 2px 2px 22px #82c3a6;
+  }
+  .img-der{
+    padding-left: 10px;
+    order: 2;
+    width: 50%;
+
+  }
+  .img-der:hover{
+    animation-name: imgder-animacion;
+  	animation-duration: 3s;
+  	-webkit-animation-delay:1s;
+  	-moz-animation-delay:1s;
+  	animation-delay: 1s;
+    box-shadow: 2px 2px 22px #82c3a6;
+  }
+  @-webkit-keyframes imgder-animacion{
+  	0%{
+  		position: relative;
+  		left: 0;
+  	}
+  	50%{
+  		position: relative;
+  		top: 5px;
+      left:20px;
+  	}
+  	100%{
+  		position: relative;
+  		left: 0;
+  	}
+}
+    .imgp-1, .imgp-3, .imgp-4,.imgp-6, .imgr-1, .imgr-3, .imgr-4,.imgr-6 {
+        padding-right: 0px;
+        width: 30%;
+    }
+    .imgp-2, .imgp-5, .imgr-2, .imgr-5 {
+        padding: 0px 43px;
+        width: 30%;
+    }
+
+}
+@media (max-width: 768px) {
+.contenido{
+    width:100%;
+  }
+  .contenido2{
+    display:inline-block;
+      flex: 1 2 50%;
+    }
+    section[class="contacto"]{
+      display: flow-root;
+      width: 100%;
+      padding: 20px;
+    }
+.img-der, .img-izq{
+  width: 100%;
+  margin: 10px auto;
+  padding:5px 0px;
+}
+header{
+  width: 100%;
+  padding: 10px 20px!important;
+  text-align: center;
+}
+.contacto {
+    background-color: #C6d5c5;
+    width: 100%;
+}
+.imgp-1, .imgp-2, .imgp-3, .imgp-4, .imgp-5, .imgp-6,
+.imgr-1, .imgr-2, .imgr-3, .imgr-4, .imgr-5, .imgr-6{
+  margin: 10px auto;
+  width: 100%;
+  padding: 5px 0px;
+}
+header nav {
+    text-align: center;
+
+}
+}

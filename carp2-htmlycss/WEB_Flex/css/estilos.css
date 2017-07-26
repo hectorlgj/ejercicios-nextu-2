@@ -38,7 +38,7 @@ div [class*="bloque"]{
 .bloque5 {
   color: #ddd;
   background-color: #000000;
-  order: 1;
+  order: 7;
 
 }
 .bloque6 {
@@ -50,8 +50,8 @@ div [class*="bloque"]{
 .bloque7 {
   color: #ddd;
   background-color: #0000F0;
-  order: 7;
-  
+  order: 1;
+
 }
 
 .contenedor{
