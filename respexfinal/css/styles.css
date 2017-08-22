@@ -1,0 +1,76 @@
+header{
+  height: auto;
+  padding: 20px;
+}
+.fondo{
+  background-image: url(../img/rock.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+.fondo1{
+  background-color: rgba(249, 247, 247, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+.redes{
+  display: flex;
+  list-style: none;
+  margin-top: 8em;
+}
+.redsocial{
+  width: auto;
+  height: auto;
+}
+.imgsz{
+  width:100%;
+}
+.nav>li>a {
+    width: 16.25vw;
+}
+.form-group{
+  display: -webkit-inline-box;
+}
+.texto{
+  text-align: center;
+  background-color: #dedede;
+  padding:10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.texto:hover{
+  background-color: #000000;
+  color:#fff;
+}
+.coments{
+    display: flex;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+.icono{
+  font-size: 3em;
+    padding: 10px;
+}
+.bg-music{
+  color:#fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius:5px; 
+}
+@media (max-width: 768px) {
+.nav-item{
+  width:100%;
+  margin: 5px;
+}
+ul.redes{
+  margin-top: 10px;
+  display: inline-flex;
+  -webkit-padding-start:0px;
+}
+.navbar-nav {
+    margin: 7.5px 0px!important;
+}
+.nav>li>a {
+  width: 100%;
+}
+}
