@@ -1,0 +1,149 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+
+    <div class="row small-stack medium-unstack">
+      <div class="small-5 medium-4 large-3 columns">
+        <div class="callout primary">Columna 1</div>
+      </div>
+      <div class="small-7 medium-8 large-9 columns">
+        <div class="callout primary">Columna 2</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-6 medium-3 large-5 columns">
+        <div class="callout primary">Columna 3</div>
+      </div>
+      <div class="columns">
+        <div class="callout primary">Columna 4</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="columns">
+        <div class="callout primary">Columna 3</div>
+      </div>
+      <div class="columns shrink">
+        <div class="callout primary">Columna 4</div>
+      </div>
+      <div class="columns">
+        <div class="callout primary">Columna 4</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="small-12 medium-expand columns">
+        <div class="callout primary">Columna 3</div>
+      </div>
+      <div class="small-12 medium-expand columns">
+        <div class="callout primary">Columna 4</div>
+      </div>
+      <div class="small-12 medium-expand columns">
+        <div class="callout primary">Columna 4</div>
+      </div>
+      <div class="small-12 medium-expand columns">
+        <div class="callout primary">Columna 4</div>
+      </div>
+    </div>
+
+    <div class="row small-stack medium-unstack">
+      <div class="columns">
+        <div class="callout primary">Columna 3</div>
+      </div>
+      <div class="columns">
+        <div class="callout primary">Columna 4</div>
+      </div>
+      <div class="columns">
+        <div class="callout primary">Columna 4</div>
+      </div>
+      <div class="columns">
+        <div class="callout primary">Columna 4</div>
+      </div>
+    </div>
+
+    <div class="row small-stack medium-unstack collapse align-spaced
+    ">
+      <div class="large-2 columns large-order-2 small-order-1">
+        <div class="callout primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+      </div>
+      <div class="large-3 columns large-order-1 small-order-4">
+        <div class="callout primary">Columna 2</div>
+      </div>
+      <div class="large-3 columns align-self-middle large-order-3 small-order-2">
+        <div class="callout primary">Columna 3</div>
+      </div>
+      <div class="large-2 columns align-self-bottom large-order-4 small-order-3">
+        <div class="callout primary">Columna 4</div>
+      </div>
+    </div>
+    <!-- Formularios-->
+    <form>
+    <div class="row small-stack medium-unstack">
+      <div class="columns">
+        <label>texto
+        <input type="text" placeholder="Texto" required aria-describedby="ayudaTexto">
+      </label>
+        <p class="help-text" id="ayudaTexto">Aqui debes llenar un texto cualquiera</p>
+        <label>Fecha
+        <input type="date" required></label>
+        <label>Fecha y hora
+        <input type="datetime-local" ></label>
+        <label>Email
+        <input type="email" placeholder="email" required></label>
+        <label>Mes
+        <input type="month" required></label>
+        <label>Numero
+        <input type="number" placeholder="Numero"></label>
+        <div class="row">
+          <div class="colums">
+            <fieldset class="fieldset">
+              <legend>Radio Button</legend>
+              <input type="radio" name="color" value="Rojo" id="Rojo" required><label for="Rojo">Rojo</label>
+              <input type="radio" name="color" value="Azul" id="Azul" required><label for="Azul">Azul</label>
+            </fieldset>
+          </div>
+          <div class="colums">
+            <fieldset class="fieldset">
+              <legend>checkbox</legend>
+              <input type="checkbox" id="checkbox1"><label for="checkbox1">verde</label>
+              <input type="checkbox" id="checkbox2"><label for="checkbox2">Morado</label>
+            </fieldset>
+          </div>
+         </div>
+         <input type="submit" class="button float-right">
+      </div>
+      <div class="columns">
+
+        <label>Contraseña
+        <input type="pasword" placeholder="contraseña"></label>
+        <label>Teléfono
+        <input type="tel" name="" value=""></label>
+        <label>Tiempo
+        <input type="time" name="" value=""></label>
+        <label>Url
+        <input type="url" name="" value=""></label>
+        <label>Semana
+        <input type="week" name="" value=""></label>
+        <label>Texto largo
+        <textarea name="text" rows="8" cols="80"></textarea></label>
+      </div>
+
+    </div>
+</form>
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

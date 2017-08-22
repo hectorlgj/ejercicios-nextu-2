@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width,user-scalable=no">
+    <title>listas ordenadas,no oredenadas y definicion de terminos</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src='js/bootstrap.min.js'></script>
+  </head>
+  <body>
+    <div class="container">
+      <ul class="list-inline">
+        <li>Carro</li>
+        <li>moto</li>
+        <li>patineta</li>
+        <li>tren</li>
+      </ul>
+
+      <ul class="dl-horizontal">
+        <dt>Framework</dt>
+        <dd>conjunto de librerias</dd>
+        <dt>bootstrap</dt>
+        <dd>Librería css ya prediseñada</dd>
+      </ul>
+
+    </div>
+    <div class="container">
+      <img src="img/movie_1.jpg" alt="" class="img-rounded">
+      <img src="img/movie_1.jpg" alt="" class="img-circle">
+      <img src="img/movie_1.jpg" alt="" class="img-thumbnail">
+    </div>
+    <!--
+    Clases de Bootstrap CSS para texto:
+
+text-left: Alinear el texto a la izquierda.
+text-center: Alinear el texto al centro.
+text-right: Alinear el texto a la derecha.
+text-justify: Justificar el texto.
+text-uppercase: Convertir el texto a mayúsculas.
+text-lowercase: Convertir el texto a minúsculas.
+text-capitalize: Convertir las iniciales del texto a mayúsculas.
+
+Etiquetas especiales de Bootstrap CSS para textos:
+<abbr>: Abreviar texto. Es importante agregar el atributo title, para que esta funcione.
+<mark>: Marcar o resaltar texto.
+<code>: Resaltar porciones o líneas de código.
+<kbd>: Resaltar las teclas de acceso directo.
+
+Clases y etiquetas para el manejo de listas:
+<dl>: Abrir o iniciar una lista por definición.
+<dt>: Primera etiqueta que se asigna después de abrir la lista por definición. En ésta se podría decir que va el término o palabra que se desea definir o describir.
+<dd>: Etiqueta que va después de la etiqueta dt. En ésta se pone la definición o descripción del término o palabra que se puso en el dt.
+list-unstyled: Clase utilizada para quitar la numeración o viñetas de una lista.
+list-inline: Clase utilizada para mostrar las listas de manera horizontal.
+dl-horizontal: Clase utilizada para mostrar las listas por definición de manera horizontal.
+
+Clases Bootstrap para imágenes:
+img-rounded: Redondea las esquinas a 16 píxeles.
+img-circle: Redondea las esquinas con un radio de 50%.
+img-thumbnail: Pone un marco alrededor de la imagen.-->
+<div class="container">
+  <form class="" action="" method="post" role="form">
+    <legend>Formulario de contacto</legend>
+    <div class="form-group">
+      <label for="Nombre">Nombre</label>
+      <input type="text" name="Nombre" id="Nombre" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="Teléfono">Teléfono</label>
+      <input type="number" name="telefono" id="Teléfono" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="Email">Email</label>
+      <input type="email" name="email" id="email" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="hobbie1">Leer</label>
+      <input type="checkbox" name="hobbie1" id="hobbie1" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="hobbie2">Escribir</label>
+      <input type="checkbox" name="hobbie2" id="hobbie2" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="Comentario">Comentarios</label>
+      <textarea name="comentario" rows="8" cols="40" class="form-control"></textarea>
+    </div>
+    <div class="form-group">
+        <input type="button" name="boton" value="Send" class="btn btn-default">
+    </div>
+  </form>
+
+</div>
+
+
+  </body>
+</html>
